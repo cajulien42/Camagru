@@ -1,0 +1,111 @@
+#mygal
+{
+  height : 100%;
+  width : 100%;
+
+  margin-left: 0;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* align-content: center;
+  align-items: center; */
+}
+
+#mygal > ul
+{
+  margin-top:0;
+  /* padding-left : 5%; */
+  overflow: auto;
+  height : 100%;
+  width : 90%;
+  max-width: 650px;
+  direction:rtl;  /* Right To Left */ 
+  text-align:left; /* Override direction */
+}
+
+
+#mygal > ul > li
+{
+  margin-right: 25%;
+  width : 70%;
+  /* padding : 5%; */
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+#mygal > ul::after
+{
+  display:none;
+}
+
+.likeicon
+{
+  
+  height : calc(0.7vw + 0.9vh);
+  width : calc(0.7vw + 0.9vh);
+}
+
+.commenticon
+{
+  margin-bottom: 2px;
+  height : calc(0.7vw + 0.9vh);
+  width : calc(0.7vw + 0.9vh);
+
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(216, 38, 38, 0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #4db6ac ;
+}
+
+.card
+{
+  height : 30%;
+  width : 100%;
+  
+}
+
+.card .card-content
+{
+ padding : 3%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+  
+}
+/* .card-content > p
+{
+  padding-bottom: 4%;
+} */
+
+.card .card-title
+{
+  max-height: 10%;
+	font-size: calc(0.7vw + 0.9vh);
+}
+
+.card > div > img
+{
+	cursor: pointer;
+}
+
+.line{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+

@@ -1,0 +1,111 @@
+body
+{
+	height: 			100%;
+	width: 				100%;
+	font-size: calc(0.7vw + 0.9vh);
+	margin: 			0;
+	display: 			flex;
+	flex-direction: 	column;
+	align-items: 		center;
+	justify-content: 	space-between;
+  font-family: 		'Roboto', sans-serif;
+}
+
+#header
+{
+	width : 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+}
+
+.nav-wrapper > a
+{
+	height : 5%;
+}
+
+#footer
+{
+	height : 10%;
+	width : 100%;
+	font-size: calc(0.8vw + 1vh);
+}
+
+.page-footer
+{
+	display:  flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	height : 100%;
+	width:100%;
+}
+
+.page-footer > div
+{
+	margin-left : 3%;
+}
+
+.container
+{
+	width:100%;
+}
+h5
+{
+	font-size: 1.7vw;
+}
+
+#content
+{
+	background : rgba(245, 245, 245, 0.096);
+	height :			100%;
+	width :				100%;
+	display:			flex;
+	flex-direction: 	row;
+	justify-content: 	space-between;
+	align-items: 			center;
+	justify-items: 		center;
+}
+
+#sidemenu
+{
+	margin-right : 5%;
+	font-size: calc(0.6vw + 1vh);
+	height : 			100%;
+	width :				15%;
+	display:			flex;
+	flex-direction: 	column;
+	justify-content: 	flex-start;
+}
+
+
+#sidemenu > div:nth-child(1), #sidemenu > div:nth-child(5)
+{
+	margin-left: 15%;
+}
+
+#sidemenu > div:nth-child(2), #sidemenu > div:nth-child(4)
+{
+	margin-left: 5%;
+}
+
+
+.nav-wrapper > a
+{
+	font-size: calc(0.6vw + 1vh);
+	font-weight: 400;
+}
+.nav-wrapper > ul > li> a
+{
+	font-size: calc(0.6vw + 1vh);
+}
+
+.redirection
+{
+	width : 33%;
+	margin-left: 33%;
+
+	
+}

@@ -1,0 +1,231 @@
+#main_section
+{
+	height: 			100%;
+	width: 				70%;
+	display:			flex;
+	flex-direction: 	column;
+	justify-content: 	space-around;
+    align-items: flex-end;
+    margin-right: 5%;
+}
+
+.camera
+{
+    display:			flex;
+	flex-direction: 	column;
+	justify-content: 	space-around;
+    align-items: 		center;
+    flex-wrap: wrap;
+    align-content:    center;
+    width:50%;
+    height:80%;
+
+}
+
+#webcam
+{
+	/* margin-top : 8%; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#canvas
+{
+    display:none;
+}
+
+#canvas2
+{
+    display:none;
+}
+
+#output
+{
+    /* border: 2px solid black; */
+    width: 100%;
+}
+
+#photo
+{
+    border: 2px solid black;
+    background-color: antiquewhite;
+    width:100%;
+}
+
+#main_container
+{
+    float: left; position: relative; left:0; top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#video
+{
+    border: 2px solid black;
+    position: absolute; left: 0px; top: 0px; min-height: 100%;
+    min-width: 100%; 
+    z-index: 0;
+}​
+
+img {
+	
+}
+#mydiv {
+	position: absolute; left: 0px; top: 0px;
+	z-index: 9;
+	background: transparent;
+	text-align: center;
+	height:100%;
+	width:100%;
+  }
+  
+  #mydivheader {
+	padding: 10px;
+	cursor: move;
+	z-index: 10;
+	background: transparent;
+  }
+
+#mydivheader > img
+{
+    position: relative; 
+    width:100%;
+    height:100%;
+    opacity : 1;
+    z-index: 11;
+    mask-type: alpha;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;    
+}
+
+#controls
+{
+	position: relative;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+	height : 15%;
+	z-index: 10001;
+}
+#resize_filter
+{
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#overlayed{
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.contain{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height : 100%;
+    width : 100%;
+}
+
+.take_photo
+{
+    margin: 4px;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 900px) {
+    .camera
+    {
+        display:			flex;
+        flex-direction: 	column;
+        justify-content: 	space-around;
+        align-items: 		center;
+        flex-wrap: wrap;
+        align-content:    center;
+        width:100%;
+        height:100%;
+    
+    }
+    #webcam
+    {
+    	/* margin-top : 8%; */
+        /* border: 2px solid black; */
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+    }
+    #sidemenu
+    {
+    	font-size: 2vw;
+    	height : 			80%;
+    	width :				20%;
+    	display:			flex;
+    	flex-direction: 	column;
+    	justify-content: 	flex-start;
+    }
+}
+
+#mygal2
+{
+  height : 100%;
+  width : 25%;
+
+
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* align-content: center;
+  align-items: center; */
+}
+
+#mygal2 > ul
+{
+  margin-top:0;
+  /* padding-left : 5%; */
+  overflow: auto;
+  overflow-x: hidden;
+  height : 100%;
+  width : 100%;
+}
+
+
+#mygal2 > ul > li
+{
+  
+  width : 95%;
+  /* padding : 5%; */
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+#mygal2 > ul::after
+{
+  display:none;
+}
+
+#mygal2 > ul > li > .card
+{
+    margin-right:0;
+}
+
+#upform
+{
+    position: relative;
+    z-index: 11000;
+    height : 7%;
+    width : 50%;
+    font-size: calc(1vw +0.2vh);
+}
